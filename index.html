@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sonai ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg,#180018,#57002e,#20001f);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+  padding: 25px 15px;
+}
+
+.container {
+  max-width: 480px;
+  margin: auto;
+  padding: 25px 18px;
+  background: rgba(255,255,255,.09);
+  border: 1px solid #ff83bd;
+  border-radius: 25px;
+  box-shadow: 0 0 35px #ff1493;
+  backdrop-filter: blur(10px);
+}
+
+.heart {
+  font-size: 48px;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  50% {transform:scale(1.2);}
+}
+
+h1 {
+  color: #ff9dcc;
+  font-size: 29px;
+  margin: 12px 0;
+}
+
+.subtitle {
+  color: #ffd4e8;
+  margin-bottom: 20px;
+}
+
+.photo {
+  width: 100%;
+  max-height: 470px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 20px;
+  border: 3px solid #ff9dcc;
+  box-shadow: 0 0 20px #ff1493;
+  margin: 15px 0;
+}
+
+.love-text {
+  color: #ffc4e0;
+  font-size: 17px;
+  margin: 12px 0;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 8px;
+  margin: 25px 0;
+}
+
+.time {
+  background: rgba(255,255,255,.13);
+  padding: 15px 3px;
+  border-radius: 13px;
+  border: 1px solid #ff83bd;
+}
+
+.time span {
+  display: block;
+  font-size: 27px;
+  font-weight: bold;
+  color: #ff9dcc;
+}
+
+.time small {
+  font-size: 11px;
+}
+
+.date {
+  color: #ffb5d8;
+  font-size: 17px;
+}
+
+button {
+  background: linear-gradient(45deg,#ff1493,#ff69b4);
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+#birthday {
+  display: none;
+}
+
+#birthday h2 {
+  color: #ff9dcc;
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.message {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #ffe2f0;
+}
+
+#surprise {
+  display: none;
+  color: #ffb5dc;
+  line-height: 2;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 20px;
+  color: #ffb5dc;
+  font-size: 13px;
+}
+
+.floating {
+  position: fixed;
+  bottom: -40px;
+  pointer-events: none;
+  animation: float 7s linear forwards;
+  z-index: 10;
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="heart">❤️</div>
+
+<h1>For My Beautiful Sonai</h1>
+
+<p class="subtitle">
+A Special Day For The Most Special Girl 💕
+</p>
+
+<img src="couple.jpg" class="photo" alt="Our Couple Photo">
+
+<p class="love-text">
+Every love story is beautiful, but ours is my favourite. ❤️
+</p>
+
+<div id="countdownArea">
+
+<h3>Sonai's Birthday Countdown 🎂</h3>
+
+<div class="countdown">
+
+<div class="time">
+<span id="days">00</span>
+<small>Days</small>
+</div>
+
+<div class="time">
+<span id="hours">00</span>
+<small>Hours</small>
+</div>
+
+<div class="time">
+<span id="minutes">00</span>
+<small>Minutes</small>
+</div>
+
+<div class="time">
+<span id="seconds">00</span>
+<small>Seconds</small>
+</div>
+
+</div>
+
+<p class="date">22 November 2026 ❤️</p>
+
+<p class="love-text">
+Waiting for your special day, my love! 💗
+</p>
+
+</div>
+
+<div id="birthday">
+
+<div class="heart">💖🎂💖</div>
+
+<h2>Happy Birthday Sonai!</h2>
+
+<img src="couple.jpg" class="photo" alt="Our Memories">
+
+<div class="message">
+
+My Dear Sonai ❤️
+
+আজকের দিনটা আমার কাছে অনেক স্পেশাল,
+কারণ আজকের দিনেই পৃথিবীতে এসেছিল
+আমার জীবনের সবচেয়ে প্রিয় মানুষটি।
+
+তোমার মুখের হাসি যেন কখনো হারিয়ে না যায়।
+তোমার প্রতিটি স্বপ্ন পূরণ হোক।
+
+আমি চাই তোমার প্রতিটি জন্মদিনে
+তোমার পাশে থাকতে।
+
+Happy Birthday My Princess! 🎂
+
+I Love You So Much, Sonai! ❤️
+
+</div>
+
+<button onclick="showSurprise()">
+Open Your Special Surprise 🎁
+</button>
+
+<div id="surprise">
+
+<h2>One Promise Forever ❤️</h2>
+
+তুমি শুধু আমার আজকের ভালোবাসা নও,
+তুমি আমার আগামী দিনের স্বপ্ন।
+
+হাজারো মানুষের ভিড়েও
+আমি তোমাকেই বেছে নেব।
+
+Forever Yours, My Sonai! 💍❤️
+
+</div>
+
+</div>
+
+<div class="footer">
+Made With ❤️ Only For Sonai
+<br>
+Forever & Always
+</div>
+
+</div>
+
+<script>
+
+const birthday = new Date(
+"2026-11-22T00:00:00+05:30"
+).getTime();
+
+function updateCountdown() {
+
+const now = Date.now();
+const distance = birthday - now;
+
+if(distance <= 0) {
+
+document.getElementById("countdownArea").style.display="none";
+document.getElementById("birthday").style.display="block";
+
+return;
+}
+
+document.getElementById("days").innerText =
+Math.floor(distance/(1000*60*60*24));
+
+document.getElementById("hours").innerText =
+Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+document.getElementById("minutes").innerText =
+Math.floor((distance%(1000*60*60))/(1000*60));
+
+document.getElementById("seconds").innerText =
+Math.floor((distance%(1000*60))/1000);
+
+}
+
+function showSurprise() {
+document.getElementById("surprise").style.display="block";
+}
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+// Floating romantic hearts and flowers
+
+setInterval(() => {
+
+const items = ["❤️","💕","💖","🌹","💗","✨"];
+
+const el = document.createElement("div");
+
+el.className = "floating";
+
+el.innerText = items[
+Math.floor(Math.random()*items.length)
+];
+
+el.style.left = Math.random()*100+"vw";
+
+el.style.fontSize =
+(18+Math.random()*20)+"px";
+
+document.body.appendChild(el);
+
+setTimeout(() => el.remove(),7000);
+
+},450);
+
+</script>
+
+</body>
+  </html>
+  
